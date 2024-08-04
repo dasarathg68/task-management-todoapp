@@ -5,7 +5,7 @@
         columnId: column.columnId,
         type: TYPES.COLUMN
       }"
-      class="p-2 w-64 bg-gray-100 shadow-lg shadow-slate-800 rounded"
+      class="p-2 w-64 bg-base-800 shadow-lg shadow-slate-400 rounded h-96"
     >
       <div class="flex justify-between items-center">
         <div class="flex gap-2 items-center">
@@ -20,7 +20,7 @@
         </div>
         <button class="text-2xl font-bold" @click="addTask(column.columnId)">+</button>
       </div>
-      <div class="flex flex-col gap-2 overflow-y-auto h-[35rem] p-2">
+      <div class="flex flex-col gap-2 overflow-y-auto p-2 h-80">
         <Task
           v-for="task of column.tasks"
           :column-id="column.columnId"
