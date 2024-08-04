@@ -51,7 +51,7 @@
 
 <script setup lang="ts">
 import { TYPES, type Column, type Task, ACTIONS, type TRANSFER_DATA } from '@/types/index'
-import Modal from './common/Modal.vue'
+import Modal from '@/components/modals/Modal.vue'
 import TaskForm from './TaskForm.vue'
 import { ref } from 'vue'
 import kanbanStore from '@/stores/kanbanStore'

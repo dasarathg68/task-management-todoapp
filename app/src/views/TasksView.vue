@@ -4,7 +4,7 @@
     <!-- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20"></div>
       -->
     <button class="btn btn-md btn-secondary" @click="addColumn('New column')">Add Column</button>
-    <div class="flex-1 flex gap-4 px-3 overflow-x-auto">
+    <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-4 gap-5">
       <Column v-for="column of STORE" :key="column.columnId" :column="column" />
     </div>
   </div>

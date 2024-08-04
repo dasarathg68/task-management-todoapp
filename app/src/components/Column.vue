@@ -75,7 +75,7 @@ import DropZone from './common/DropZone.vue'
 import { ref, onMounted } from 'vue'
 import ColumnForm from './ColumnForm.vue'
 import TaskForm from './TaskForm.vue'
-import Modal from './common/Modal.vue'
+import Modal from '@/components/modals/Modal.vue'
 import kanbanStore from '@/stores/kanbanStore'
 import Task from './Task.vue'
 
