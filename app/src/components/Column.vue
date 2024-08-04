@@ -15,7 +15,7 @@
 
           <button @click="setSelectedColumn(ACTIONS.UPDATE_COLUMN, column)">&#9998;</button>
           <button class="font-bold" @click="setSelectedColumn(ACTIONS.DELETE_COLUMN, column)">
-            &#88;
+            <span>x</span>
           </button>
         </div>
         <button class="text-2xl font-bold" @click="addTask(column.columnId)">+</button>

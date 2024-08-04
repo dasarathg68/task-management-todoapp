@@ -8,11 +8,13 @@
       }"
     >
       <div>
-        <div class="flex gap-2">
+        <div class="flex gap-2 justify-between">
           <span class="font-bold"> {{ task.name }}</span>
-          <div class="flex gap-1">
+          <div class="flex justify-between gap-5">
             <button class="text-sm font-bold" @click="toggleTaskModal()">&#9998;</button>
-            <button class="text-sm font-bold" @click="toggleDeleteTaskModal()">&#88;</button>
+            <button class="text-sm font-bold" @click="toggleDeleteTaskModal()">
+              <span>x</span>
+            </button>
           </div>
         </div>
         <div></div>
