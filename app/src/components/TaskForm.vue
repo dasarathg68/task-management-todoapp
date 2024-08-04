@@ -16,7 +16,9 @@
       class="p-2 border-2 rounded-sm border-gray-300"
     />
     <ErrorMessage name="description" class="text-red-700" />
-    <button type="submit">Submit</button>
+    <div class="flex justify-center">
+      <button class="btn btn-md btn-primary" type="submit">Submit</button>
+    </div>
   </Form>
 </template>
 <script setup lang="ts">

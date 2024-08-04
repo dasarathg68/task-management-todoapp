@@ -48,10 +48,11 @@
     @close-modal="toggleDeleteColumnModal"
   >
     <div class="p-2">
+      <hr />
       <span>Are you sure you want to delete {{ column && column.name }}?</span>
-      <div class="flex justify-around pt-3">
-        <button @click="toggleDeleteColumnModal()">No</button>
-        <button @click="deleteColumn">Yes</button>
+      <div class="flex justify-between pt-3">
+        <button class="btn btn-md w-24 btn-error" @click="toggleDeleteColumnModal()">No</button>
+        <button @click="deleteColumn" class="btn btn-md w-24 btn-success">Yes</button>
       </div>
     </div>
   </Modal>
